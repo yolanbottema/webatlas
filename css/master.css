@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather&family=Montserrat'); */
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+/* HOMEPAGE */
+
+/* INTRO */
+.intro{
+    margin: 10%;
+}
+
+
+
+
+
+
