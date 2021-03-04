@@ -14,12 +14,61 @@ html {
 /* HOMEPAGE */
 
 /* INTRO */
-.intro{
+
+.intro {
     margin: 10%;
 }
 
+/* KAART 1 */
 
+#mapid {
+    height: 500px;
+    width: 600px;
+}
 
+/* KAART2 */
 
+.embed-container {
+    position: relative;
+    padding-bottom: 80%;
+    height: 0;
+    max-width: 100%;
+}
 
+.embed-container iframe, .embed-container object, .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+}
 
+small {
+    position: absolute;
+    z-index: 40;
+    bottom: 0;
+    margin-bottom: -15px;
+}
+
+/* BRONNEN */
+
+.bron {
+    color: black;
+    text-decoration: none;
+    margin: 3%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #7F2122;
+}
+
+.footer-txt {
+    color: white;
+}
+
+.bronnen {
+    text-decoration: none;
+    color: white;
+}
