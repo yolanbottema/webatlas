@@ -19,14 +19,30 @@ html {
     margin: 10%;
 }
 
-/* KAART 1 */
+/* page - KAART 1 */
 
 #mapid {
     height: 500px;
-    width: 600px;
+    width: 700px;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
-/* KAART2 */
+/* leaflet */
+.info {
+    padding: 6px 8px;
+    font: 14px 'Montserrat', sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #000000;
+}
+
+/* page - KAART2 */
 
 .embed-container {
     position: relative;
@@ -72,3 +88,4 @@ small {
     text-decoration: none;
     color: white;
 }
+
