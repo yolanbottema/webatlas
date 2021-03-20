@@ -11267,7 +11267,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "XI"
+        "name": "XI - Transpadana"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12056,7 +12056,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "IX"
+        "name": "IX - Liguria"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21629,7 +21629,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "X"
+        "name": "X - Venetia et Histria"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22556,7 +22556,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "VIII"
+        "name": "VIII - Aemilia"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23151,7 +23151,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "VII"
+        "name": "VII - Etruria"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24214,7 +24214,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "VI"
+        "name": "VI - Umbria et Ager Gallicus"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24529,7 +24529,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "IV"
+        "name": "IV - Samnium"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24892,7 +24892,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "V"
+        "name": "V - Picenum"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25147,7 +25147,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "I"
+        "name": "I - Latium et Campania"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26134,7 +26134,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "III"
+        "name": "III - Lucania et Brutii"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -31913,7 +31913,7 @@ var romanmap =[{
     {
       "type": "Feature",
       "properties": {
-        "name": "II"
+        "name": "II - Apulia et Calabria"
       },
       "geometry": {
         "type": "MultiPolygon",

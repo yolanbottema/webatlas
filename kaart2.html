@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/typefaces.css">
 
-    <title>Kaart 2</title>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <title>Romeinse Keizers </title>
 </head>
 
 <body>
@@ -26,8 +29,8 @@
 
         <ul class="menu">
             <li><a id="home" href="index.html">home</a></li>
-            <li><a href="kaart1.html">kaart 1</a></li>
-            <li><a class="active" href="kaart2.html">kaart 2</a></li>
+            <li><a href="kaart1.html">Romeinse Rijk</a></li>
+            <li><a class="active" href="kaart2.html">Romeinse Keizers</a></li>
             <li><a href="kaart3.html">kaart 3</a></li>
             <li><a href="kaart4.html">kaart 4</a></li>
             <li><a href="kaart5.html">kaart 5</a></li>
@@ -38,12 +41,32 @@
         </ul>
     </div>
 
-    <div class="kaart2">
-        <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0"
-                marginwidth="0" title="romeinse nederzettingen"
-                src="//aereshogeschool.maps.arcgis.com/apps/Embed/index.html?webmap=b1799712f2ba456b9eb229d8a8501101&extent=-41.4455,12.5247,72.0213,64.6108&home=true&zoom=true&previewImage=false&scale=true&legend=true&disable_scroll=true&theme=dark"></iframe>
-        </div>
+ <!-- chart-js grafiek -->
+
+ <div class="chart-js">
+    <canvas class="chart-keizers" id="chart">
+        <script src="js/doodsoorzaken.js"></script>
+    </canvas>
+</div>
+
+<!-- datawrapper grafiek -->
+
+<div class="chart-datawrapper">
+    <iframe title="Leeftijd van overlijden" aria-label="chart" id="datawrapper-chart-81tpx"
+        src="https://datawrapper.dwcdn.net/81tpx/1/" scrolling="no" frameborder="0"
+        style="width: 0; min-width: 40% !important; border: none;" height="500"></iframe>
+    <script src="js/leeftijd-overlijden.js"></script>
+</div>
+
+<!-- kepler kaart -->
+
+<div class="keplermap">
+    <div id="kepler">
+        <iframe src="kepler.gl.html" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 40% !important; border: none;" height="500" name="iframe">
+        </iframe>
     </div>
+</div>
 
     <!-- FOOTER -->
     <footer>

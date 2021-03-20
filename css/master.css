@@ -19,30 +19,36 @@ html {
     margin: 10%;
 }
 
-/* page - KAART 1 */
+/* ROMEINSE RIJK- KAART 1 */
+
+/* leaflet */
 
 #mapid {
-    height: 500px;
-    width: 700px;
+    /* height: 500px;
+    width: 670px; */
+    height: 50vh;
+    width: 40vw;
     margin-left: 5%;
     margin-bottom: 5%;
 }
 
-/* leaflet */
 .info {
     padding: 6px 8px;
     font: 14px 'Montserrat', sans-serif;
     background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 }
+
 .info h4 {
     margin: 0 0 5px;
     color: #000000;
 }
 
-/* page - KAART2 */
+/* ROMEINSE RIJK - KAART2 */
+
+/* esri */
 
 .embed-container {
     position: relative;
@@ -51,9 +57,7 @@ html {
     max-width: 100%;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container iframe {
+.embed-container iframe, .embed-container object, .embed-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -68,6 +72,47 @@ small {
     z-index: 40;
     bottom: 0;
     margin-bottom: -15px;
+}
+
+/* ROMEINSE RIJK - KAART 3 */
+
+/* mapbox */
+.mapbox{
+margin-left: 5%;
+margin-bottom: 5%;
+}
+
+#map {
+    position: absolute; 
+    top: 135%; 
+    bottom: 0; 
+    width: 40%;
+    height: 50%;
+}
+
+/* ROMEINSE KEIZERS */
+
+/* ChartJS-keizers-doodsoorzaak */
+
+.chart-js {
+    /* height: 600px;
+    width: 500px; */
+    height: 60vh;
+    width: 40vw;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* Datawrapper-leeftijd-overlijden */
+
+.chart-datawrapper {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.keplermap {
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 /* BRONNEN */
@@ -92,4 +137,3 @@ small {
     text-decoration: none;
     color: white;
 }
-
