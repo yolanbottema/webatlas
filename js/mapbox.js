@@ -25,7 +25,7 @@ map.addLayer({
     "source": "places",
     "paint": {
             "circle-radius": 2,
-            "circle-color": "#7F2122"
+            "circle-color": "#BF3234"
     }
 });
 });
