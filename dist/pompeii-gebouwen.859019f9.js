@@ -150,7 +150,7 @@ var overlayerLayers = {
 
 L.control.layers(null, overlayerLayers).addTo(map); // regio
 
-var regio_pompeii = L.geoJson(regio_pompeii, {
+var regio_pompeii = L.geoJson(regiopompeii, {
   style: function style(feature) {
     return {
       color: "#7F2122",
@@ -230,7 +230,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59144" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -93981,8 +93981,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import OSM from 'ol/source/OSM';
 // import VectorSource from 'ol/source/Vector'; 
 var image = new _style.Circle({
-  radius: 5,
-  fill: null,
+  radius: 10,
+  fill: new _style.Fill({
+    color: '#7F2122'
+  }),
   stroke: new _style.Stroke({
     color: 'red',
     width: 1
@@ -94029,8 +94031,8 @@ var map = new _Map.default({
   layers: layers,
   target: 'map-ol',
   view: new _View.default({
-    center: [579076.15, 6862209.10],
-    zoom: 4
+    center: [1390236.67, 5144288.44],
+    zoom: 14
   })
 }); // import {fromLonLat} from 'ol/proj';
 // var vectorLayerJSON_1 = new ol.source.Vector({
@@ -94096,7 +94098,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59144" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

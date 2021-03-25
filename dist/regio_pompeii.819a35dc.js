@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/regio_pompeii.js":[function(require,module,exports) {
-var regio_pompeii = [{
+var regiopompeii = [{
   "type": "FeatureCollection",
   "features": [{
     "type": "Feature",
@@ -271,7 +271,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59144" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

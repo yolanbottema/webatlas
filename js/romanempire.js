@@ -3,21 +3,17 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
-    // tileSize: 512,
-    // zoomOffset: -1,
 }).addTo(mymap);
 
-// var romanmap = L.geoJSON(romanmap, {
-//     style: function (features) {
-//         return {
-//             color: "#7F2122",
-//             weight: 1,
-//             opacity: 1
-//         };
-//     }
-// }).addTo(mymap);
-L.geoJSON(romanmap).addTo(mymap);
-// --
+var romanmap = L.geoJSON(roman, {
+    style: function (features) {
+        return {
+            color: "#7F2122",
+            weight: 1,
+            opacity: 1
+        };
+    }
+}).addTo(mymap);
 
 // Custom Info Control
 var info = L.control();
@@ -47,9 +43,9 @@ function style(feature) {
         // dashArray: '',
         fillOpacity: 0.3
     };
-}
+};
 // highlight
-L.geoJson(romanmap, {style: style}).addTo(mymap);
+L.geoJson(roman, {style: style}).addTo(mymap);
 function highlightFeature(e) {
     var layer = e.target;
 
@@ -63,17 +59,15 @@ function highlightFeature(e) {
         layer.bringToFront();
     }
     info.update(layer.feature.properties);
-}
-
-var geojson;
+};
 
 function resetHighlight(e) {
     geojson.resetStyle(e.target);
-}
+};
 
 function zoomToFeature(e) {
     mymap.fitBounds(e.target.getBounds());
-}
+};
 
 function onEachFeature(feature, layer) {
     layer.on({
@@ -81,9 +75,9 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: zoomToFeature
     });
-}
+};
 
-geojson = L.geoJson(romanmap, {
+geojson = L.geoJson(roman, {
     style: style,
     onEachFeature: onEachFeature
 }).addTo(mymap);

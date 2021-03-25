@@ -1,4 +1,4 @@
-var regio_pompeii = [{
+var regiopompeii = [{
     "type": "FeatureCollection",
     "features": [
         {

@@ -35,7 +35,7 @@ L.control.layers(null, overlayerLayers).addTo(map);
 
 
 // regio
-var regio_pompeii = L.geoJson(regio_pompeii, {
+var regio_pompeii = L.geoJson(regiopompeii, {
     style: function (feature) {
         return {
             color: "#7F2122",

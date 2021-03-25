@@ -1,4 +1,4 @@
-var romanmap =[{
+var roman =[{
   "type": "FeatureCollection",
   "crs": {
     "type": "name",
