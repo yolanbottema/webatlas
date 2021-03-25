@@ -145,7 +145,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-  this._div.innerHTML = '<h4>Romeinse rijk (provincies) </h4>' + (props ? '<b>' + props.name + '</b>' : 'Beweeg over de kaart');
+  this._div.innerHTML = '<h4>Romeinse rijk (provincies ca. AD117) </h4>' + (props ? '<b>' + props.name + '</b>' : 'Beweeg over de kaart');
 };
 
 info.addTo(mymap); // style

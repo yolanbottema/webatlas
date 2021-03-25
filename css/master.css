@@ -178,3 +178,11 @@ html,body  {
 }
 
 
+#vici-map-id{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+

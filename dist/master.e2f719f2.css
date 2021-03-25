@@ -178,6 +178,14 @@ html,body  {
 }
 
 
+#vici-map-id{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
 
 
 /*# sourceMappingURL=/master.e2f719f2.css.map */

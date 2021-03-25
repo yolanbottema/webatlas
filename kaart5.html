@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/typefaces.css">
 
-    <title>Home</title>
+    <!-- javascript vici.org -->
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://vici.org/js/vici-2.latest.js"></script>
+
+    <!-- css vici.org -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+
+
+
+    <title>Interactieve kaart</title>
 </head>
 
 <body>
@@ -30,7 +40,7 @@
             <li><a href="kaart2.html">Romeinse Keizers</a></li>
             <li><a href="kaart3.html">Pompeii</a></li>
             <li><a href="kaart4.html">Rome</a></li>
-            <li><a class="active" href="kaart5.html">kaart 5</a></li>
+            <li><a class="active" href="kaart5.html">Archeologische Atlas van de Oudheid</a></li>
 
             <label for="checkbox" class="hide-menu-btn">
                 <i class="fas fa-times"></i>
@@ -38,6 +48,7 @@
         </ul>
     </div>
 
+    <div class="vici-map" id="vici-map-id"></div>
     <!-- FOOTER -->
     <footer>
         <div class="footer">
@@ -51,6 +62,9 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        var mapObj = new ViciWidget('vici-map-id', {});
+    </script>
 </body>
 
 </html>
