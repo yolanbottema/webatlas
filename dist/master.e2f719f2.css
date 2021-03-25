@@ -146,15 +146,12 @@ margin-bottom: 5%;
     margin-bottom: 5%;
 }
 
-/* wrld3d */
-#mapwrld{
-    height: 500px;
-    width: 500px;
-}
 /* openlayers */
 #map-ol{
-    width: 500px;
-    height: 500px;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 /* BRONNEN */
 
@@ -178,5 +175,7 @@ margin-bottom: 5%;
     text-decoration: none;
     color: white;
 }
+
+
 
 /*# sourceMappingURL=/master.e2f719f2.css.map */

@@ -93974,12 +93974,6 @@ var _control = require("ol/control");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { control, defaults as defaultControls } from 'ol/control';
-// import TileWMS from 'ol/sorce/TileWMS';
-// import VectorLayer from 'ol/layer/Vector';
-// import TileLayer from 'ol/layer/Tile';
-// import OSM from 'ol/source/OSM';
-// import VectorSource from 'ol/source/Vector'; 
 var image = new _style.Circle({
   radius: 10,
   fill: new _style.Fill({
@@ -93994,15 +93988,7 @@ var styles = {
   'Point': new _style.Style({
     image: image
   })
-}; // var styles = {
-//     'Point': new Style({
-//         radius: 5,
-//         fill: new Fill({
-//             color: '#7F2122',
-//         }),
-//         stroke: new Stroke({ color: 'red', width: 1 }),
-//     }),
-// };
+};
 
 var styleFunction = function styleFunction(feature) {
   return styles[feature.getGeometry().getType()];
@@ -94034,42 +94020,7 @@ var map = new _Map.default({
     center: [1390236.67, 5144288.44],
     zoom: 14
   })
-}); // import {fromLonLat} from 'ol/proj';
-// var vectorLayerJSON_1 = new ol.source.Vector({
-//     projection : 'EPSG:3857',
-//     url: 'hills_rome.geojson',
-//     format: new ol.format.GeoJSON()
-//  });
-// new Map({
-//     target: 'map-ol',
-//     layers: [
-//         new TileLayer({
-//             source: new OSM()
-//         }),
-//         new VectorLayer({
-//             source: new VectorSource({
-//                 format: new GeoJSON(),
-//                 url: "hills_rome.json"
-//             })
-//         })
-//     ],
-//     view: new View({
-//         center: [579076.15, 6862209.10],
-//         zoom: 4
-//     })
-// });
-// const map = new Map({
-//     target: 'map-ol',
-//     layers: [
-//         new TileLayer({
-//             source: new OSM()
-//         })
-//     ],
-//     view: new View({
-//         center: [0, 0],
-//         zoom: 2
-//     })
-// });
+});
 },{"ol/ol.css":"node_modules/ol/ol.css","ol/format/GeoJSON":"node_modules/ol/format/GeoJSON.js","ol/Map":"node_modules/ol/Map.js","ol/View":"node_modules/ol/View.js","ol/style":"node_modules/ol/style.js","ol/source":"node_modules/ol/source.js","ol/layer":"node_modules/ol/layer.js","ol/source/TileWMS":"node_modules/ol/source/TileWMS.js","ol/control":"node_modules/ol/control.js","/data/hills.json":"data/hills.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
