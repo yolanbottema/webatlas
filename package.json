@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/yolanbottema/webatlas#readme",
   "dependencies": {
+    "data": "^0.6.1",
     "ol": "^6.5.0"
   },
   "devDependencies": {
