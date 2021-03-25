@@ -1,0 +1,100 @@
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather&family=Montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* header */
+
+.xl-header{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.l-header{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.m-header{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.s-header{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.xs-header{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* header center */
+.xl-header-c{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+/* body */
+
+.l-body{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.m-body{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.s-body{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.xs-body{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* body center */
+
+.l-body-c{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.xs-body{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+
+/*# sourceMappingURL=/typefaces.4427e5e7.css.map */

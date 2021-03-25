@@ -1,0 +1,35 @@
+.legenda {
+    padding: 6px 8px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    background: #fefefe;
+    /* box-shadow: 0 0 9px rgba(0, 0, 0, 0.4); */
+    border-radius: 5px;
+    line-height: 24px;
+    color: black;
+}
+
+.legenda h4 {
+    text-align: left;
+    font-size: 16px;
+    margin: 2px 12px 8px;
+    color: black;
+}
+
+.legenda span {
+    position: relative;
+    bottom: 3px;
+}
+
+.legenda i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 8px 0 0;
+    border: 0.5px solid black;
+}
+
+.legenda i.icon {
+    background-size: 18px;
+    background-color: #fefefe;
+}
