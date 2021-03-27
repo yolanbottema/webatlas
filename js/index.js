@@ -35,7 +35,8 @@ var vectorSource = new VectorSource({
     {
       dataProjection: 'EPSG:4326',
       featureProjection: 'EPSG:3857'
-    })
+    }
+    )
 });
 
 var vectorLayer = new VectorLayer({
@@ -54,6 +55,7 @@ var layers = [
 ];
 
 var map = new Map({
+  interactions: ol.interaction.defaults({mouseWheelZoom:false}),
   layers: layers,
   target: 'map-ol',
   view: new View({
@@ -61,3 +63,4 @@ var map = new Map({
     zoom: 14,
   }),
 });
+

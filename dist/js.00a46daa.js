@@ -94014,6 +94014,9 @@ var layers = [new _layer.Tile({
   style: styleFunction
 })];
 var map = new _Map.default({
+  interactions: ol.interaction.defaults({
+    mouseWheelZoom: false
+  }),
   layers: layers,
   target: 'map-ol',
   view: new _View.default({
@@ -94049,7 +94052,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64922" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52304" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

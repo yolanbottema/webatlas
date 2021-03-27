@@ -13,13 +13,13 @@ html,body  {
 
 /* HOMEPAGE */
 
-/* INTRO */
+/* intro */
 
 .intro {
     margin: 10%;
 }
 
-/* ROMEINSE RIJK/
+/* ROMEINSE RIJK - pagina 1 */
 
 /* leaflet - kaart 1 */
 
@@ -62,17 +62,16 @@ html,body  {
     
 
 /* esri - kaart 3 */
-
 .iframe-container iframe{
     border: 0;
     width: 40%;
     margin-left: 5%;
     margin-bottom: 5%;
 }
-/* ROMEINSE KEIZERS */
+
+/* ROMEINSE KEIZERS - pagina 2 */
 
 /* ChartJS-keizers-doodsoorzaak */
-
 .chart-js {
     /* height: 600px;
     width: 500px; */
@@ -94,7 +93,6 @@ html,body  {
 }
 
 /* kepler */
-
 #kepler{
     width: 0;
     min-width: 40% !important;
@@ -105,9 +103,9 @@ html,body  {
     margin-bottom: 5%;
 }
 
-/* POMPEII */
+/* POMPEII - pagina 3 */
 
-/* kaart 1- Leaflet  */
+/* leaflet - geoserver  */
 #mapid2 {
     /* height: 500px;
     width: 670px; */
@@ -117,16 +115,17 @@ html,body  {
     margin-bottom: 5%;
 }
 
-#mapid3 {
-    /* height: 500px;
-    width: 670px; */
-    height: 50vh;
+/* chart js - pompeii */
+.chart-js-pompeii{
+    /* height: 600px;
+    width: 500px; */
+    height: 60vh;
     width: 40vw;
     margin-left: 5%;
     margin-bottom: 5%;
 }
 
-/* ROME */
+/* ROME - pagina 4 */
 
 /* openlayers */
 #map-ol{
@@ -154,6 +153,49 @@ html,body  {
     text-decoration: none;
 }
 
+/* vici - kaart */
+#vici-map-id{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* ROMEINEN IN NEDERLAND - pagina 5 */
+/* leaflet kaart limes */
+#mapid-4 {
+    /* height: 500px;
+    width: 670px; */
+    height: 50vh;
+    width: 40vw;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* flourish */
+.flourish{
+    width: 100% !important;
+    margin-top: 4px !important;
+    text-align: left !important;
+}
+.flourish-credit{
+    text-decoration: none !important;
+}
+
+.credit{
+    width: 105px !important;
+    height: 16px !important;
+    border: none !important;
+    margin-left: 5%;
+}
+
+.iframe-flourish{
+    width: 41%;
+    height: 50%;
+    margin-left: 4.5%;
+}
+
 /* BRONNEN */
 
 .bron {
@@ -178,13 +220,11 @@ html,body  {
 }
 
 
-#vici-map-id{
-    width: 50%;
-    height: 50%;
-    position: relative;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
+
+
+
+
+
 
 
 

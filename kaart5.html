@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/typefaces.css">
 
-    <!-- javascript vici.org -->
-    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://vici.org/js/vici-2.latest.js"></script>
+    <!-- css leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
 
-    <!-- css vici.org -->
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <!-- js leaflet-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script defer src="json/limes.geojson" type="text/javascript"></script>
+    <script defer src="json/limes-weg-nl.geojson" type="text/javascript"></script>
 
-
-
-    <title>Interactieve kaart</title>
+    <title>Romeinen in Nederland</title>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             <li><a href="kaart2.html">Romeinse Keizers</a></li>
             <li><a href="kaart3.html">Pompeii</a></li>
             <li><a href="kaart4.html">Rome</a></li>
-            <li><a class="active" href="kaart5.html">Archeologische Atlas van de Oudheid</a></li>
+            <li><a class="active" href="kaart5.html">Romeinen in Nederland</a></li>
 
             <label for="checkbox" class="hide-menu-btn">
                 <i class="fas fa-times"></i>
@@ -48,7 +50,23 @@
         </ul>
     </div>
 
-    <div class="vici-map" id="vici-map-id"></div>
+    <!-- leaflet kaart -->
+    <div class="kaart4">
+        <div id="mapid-4">
+            <script src="js/limes.js" defer type="text/javascript"></script>
+        </div>
+    </div>
+
+    <!-- flourish -->
+    <iframe class='iframe-flourish' defer src='https://flo.uri.sh/visualisation/5688752/embed'
+        title='Interactive or visual content' frameborder='0' scrolling='no'
+        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+    <div class='flourish'><a class='flourish-credit'
+            href='https://public.flourish.studio/visualisation/5688752/?utm_source=embed&utm_campaign=visualisation/5688752'
+            target='_top'><img alt='Made with Flourish' class="credit"
+              defer  src='https://public.flourish.studio/resources/made_with_flourish.svg'> </a>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="footer">
@@ -62,9 +80,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        var mapObj = new ViciWidget('vici-map-id', {});
-    </script>
+
 </body>
 
 </html>

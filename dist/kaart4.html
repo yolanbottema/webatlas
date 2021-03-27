@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="/master.e2f719f2.css">
     <link rel="stylesheet" href="/typefaces.4427e5e7.css">
 
-    <!-- js -->
+    <!-- javascript vici.org -->
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://vici.org/js/vici-2.latest.js"></script>
+
+    <!-- css vici.org -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 
     <title>Rome</title>
 <link rel="stylesheet" href="/js.00a46daa.css"></head>
@@ -30,13 +36,14 @@
             <li><a href="/kaart2.html">Romeinse Keizers</a></li>
             <li><a href="/kaart3.html">Pompeii</a></li>
             <li><a class="active" href="/kaart4.html">Rome</a></li>
-            <li><a href="/kaart5.html">Archeologische Atlas van de Oudheid</a></li>
+            <li><a href="/kaart5.html">Romeinen in Nederland</a></li>
 
             <label for="checkbox" class="hide-menu-btn">
                 <i class="fas fa-times"></i>
             </label>
         </ul>
     </div>
+
     <!-- open layers -->
     <div id="map-ol">
         <p class="s-body">de 7 heuvels van Rome</p>
@@ -50,7 +57,14 @@
             by <a href="https://sketchfab.com/geoffreymarchal?utm_medium=embed&utm_campaign=share-popup&utm_content=b195f0e1b7be4ec9b8d2f6d55006133a" target="_blank">Geoffrey Marchal</a>
             on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=b195f0e1b7be4ec9b8d2f6d55006133a" target="_blank">Sketchfab</a>
         </p>
+    </div>
 
+    <!-- archeologische atlas -->
+
+    <div class="vici-map" id="vici-map-id">
+        <p class="s-body">
+            Archeologische Atlas van de Oudheid
+        </p>
     </div>
 
     <!-- FOOTER -->
@@ -67,6 +81,7 @@
         </div>
     </footer>
     <script src="/js.00a46daa.js"></script>
+    <script>var mapObj = new ViciWidget('vici-map-id', {});</script>
 </body>
 
 </html>

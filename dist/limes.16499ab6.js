@@ -117,26 +117,56 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/sketchfab.js":[function(require,module,exports) {
-var iframe = document.getElementById('api-frame');
-var uid = '7w7pAfrCfjovwykkEeRFLGw5SXS'; // By default, the latest version of the viewer API will be used.
+})({"js/limes.js":[function(require,module,exports) {
+var mymap = L.map('mapid-4', {
+  scrollWheelZoom: false
+}).setView([52.09329226764612, 5.074222349128035], 8);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieW9sYW4iLCJhIjoiY2puYmk0ZXByMDF3bDN2cDZueGZqNDJsayJ9.g1Mg6-OOpeAcSC4ykvwCEw', {
+  // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  maxZoom: 18,
+  id: 'mapbox/streets-v11'
+}).addTo(mymap); // pop up
 
-var client = new Sketchfab(iframe); // Alternatively, you can request a specific version.
-// var client = new Sketchfab( '1.9.0', iframe );
+function onEachFeature(feature, layer) {
+  var popupContent = '<b>' + feature.properties.nameroman + '</b>' + '<p>' + feature.properties.namenl + '</p>';
 
-client.init(uid, {
-  success: function onSuccess(api) {
-    api.start();
-    api.addEventListener('viewerready', function () {
-      // API is ready to use
-      // Insert your code here
-      console.log('Viewer is ready');
+  if (feature.properties && feature.properties.popupContent) {
+    popupContent += feature.properties.popupContent;
+  }
+
+  layer.bindPopup(popupContent);
+}
+
+; //  icon
+
+var geojsonMarkerOptions = {
+  radius: 8,
+  fillColor: "#7F2122",
+  color: "#000",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 1
+};
+var limesweg = L.geoJSON(limesroad, {
+  style: function style(features) {
+    return {
+      color: "#FACD1E",
+      weight: 3,
+      opacity: 1
+    };
+  }
+}).addTo(mymap).bindPopup("<b>Romeinse Limes</b><br>Nederland");
+var limes = L.geoJSON(limesnl, {
+  pointToLayer: function pointToLayer(feature, latlng) {
+    return L.circleMarker(latlng, geojsonMarkerOptions, {
+      icon: geojsonMarkerOptions
     });
   },
-  error: function onError() {
-    console.log('Viewer error');
-  }
-});
+  style: function style(feature) {
+    return feature.properties && feature.properties.style;
+  },
+  onEachFeature: onEachFeature
+}).addTo(mymap);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -165,7 +195,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64922" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52304" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -341,5 +371,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/sketchfab.js"], null)
-//# sourceMappingURL=/js/sketchfab.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/limes.js"], null)
+//# sourceMappingURL=/limes.16499ab6.js.map
