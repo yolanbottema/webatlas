@@ -124,12 +124,7 @@ var map = new mapboxgl.Map({
   style: 'mapbox://styles/yolan/ckmi1f7he385k17nr5ir2yx9h',
   center: [13.32570195433817, 45.338667448264964],
   zoom: 3
-}); //   map.on('load', function () {
-//     map.addSource("places", {
-//             "type": "geojson",
-//             "data": "romanplaces.geojson"
-//     });
-
+});
 map.on('load', function () {
   map.addSource("places", {
     "type": "geojson",
@@ -44425,7 +44420,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53058" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50008" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

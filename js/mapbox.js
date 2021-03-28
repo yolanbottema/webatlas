@@ -7,12 +7,6 @@ var map = new mapboxgl.Map({
     zoom: 3
   });
 
-//   map.on('load', function () {
-//     map.addSource("places", {
-//             "type": "geojson",
-//             "data": "romanplaces.geojson"
-//     });
-
 map.on('load', function () {
     map.addSource("places", {
             "type": "geojson",

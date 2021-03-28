@@ -124,9 +124,7 @@ var map = L.map('mapid2', {
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieW9sYW4iLCJhIjoiY2puYmk0ZXByMDF3bDN2cDZueGZqNDJsayJ9.g1Mg6-OOpeAcSC4ykvwCEw', {
   // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
-  id: 'mapbox/streets-v11' // tileSize: 512,
-  // zoomOffset: -1,
-
+  id: 'mapbox/streets-v11'
 }).addTo(map); // geoserver lagen (gebouwen + functies)
 
 var gebouwen = L.tileLayer.wms('http://localhost:8080/geoserver/pompeii/wms', {
@@ -144,10 +142,7 @@ var gebouwen = L.layerGroup([gebouwen]);
 var overlayerLayers = {
   'Gebouwen': gebouwen,
   'Functies van gebouwen': functies
-}; // var overlayerLayers2 = {
-//     'functies' : functies
-// };
-
+};
 L.control.layers(null, overlayerLayers).addTo(map); // regio
 
 var regio_pompeii = L.geoJson(regiopompeii, {
@@ -181,8 +176,7 @@ legend.onAdd = function (map) {
   div.innerHTML += '<i style="background: #3a95cd"></i><span>Workshops</span><br>';
   div.innerHTML += '<i style="background: #616acd"></i><span>Unknown</span><br>';
   return div;
-}; // legend.addTo(map);
-
+};
 
 map.on('overlayadd', function (eventLayer) {
   // Switch to the functies legend...
@@ -192,16 +186,7 @@ map.on('overlayadd', function (eventLayer) {
     // Or switch to the Population Change legend...
     map.removeControl(legend);
   }
-}); // map.on('baselayerchange', function (eventLayer) {
-//     // Switch to the Permafrost legend...
-//     if (eventLayer.name === 'Permafrost') {
-//         map.removeControl(legend1);
-//         legend2.addTo(map);
-//     } else { // Or switch to the treeline legend...
-//         map.removeControl(legend2);
-//         legend1.addTo(map);
-//     }
-// });
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -230,7 +215,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53058" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50008" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

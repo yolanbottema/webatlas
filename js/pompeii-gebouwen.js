@@ -3,8 +3,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
-    // tileSize: 512,
-    // zoomOffset: -1,
 }).addTo(map);
 
 // geoserver lagen (gebouwen + functies)
@@ -27,12 +25,8 @@ var overlayerLayers = {
     'Gebouwen' : gebouwen,
     'Functies van gebouwen' : functies
 }
-// var overlayerLayers2 = {
-//     'functies' : functies
-// };
+
 L.control.layers(null, overlayerLayers).addTo(map);
-
-
 
 // regio
 var regio_pompeii = L.geoJson(regiopompeii, {
@@ -67,8 +61,6 @@ var legend = L.control({ position: "bottomleft" });
         return div;
     };
 
-    // legend.addTo(map);
-
     map.on('overlayadd', function (eventLayer) {
         // Switch to the functies legend...
         if (eventLayer.name === 'Functies van gebouwen') {
@@ -78,14 +70,3 @@ var legend = L.control({ position: "bottomleft" });
         }
     });
 
-    // map.on('baselayerchange', function (eventLayer) {
-    //     // Switch to the Permafrost legend...
-    //     if (eventLayer.name === 'Permafrost') {
-    //         map.removeControl(legend1);
-    //         legend2.addTo(map);
-    //     } else { // Or switch to the treeline legend...
-    //         map.removeControl(legend2);
-    //         legend1.addTo(map);
-    //     }
-    // });
-    
