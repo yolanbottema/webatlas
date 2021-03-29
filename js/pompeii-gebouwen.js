@@ -1,6 +1,5 @@
 var map = L.map('mapid2', { scrollWheelZoom: false }).setView([40.751186866271716, 14.484671021101914], 15);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieW9sYW4iLCJhIjoiY2puYmk0ZXByMDF3bDN2cDZueGZqNDJsayJ9.g1Mg6-OOpeAcSC4ykvwCEw', {
-    // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
 }).addTo(map);
@@ -62,10 +61,9 @@ var legend = L.control({ position: "bottomleft" });
     };
 
     map.on('overlayadd', function (eventLayer) {
-        // Switch to the functies legend...
         if (eventLayer.name === 'Functies van gebouwen') {
             legend.addTo(map);
-        } else { // Or switch to the Population Change legend...
+        } else { 
             map.removeControl(legend);
         }
     });
