@@ -1,8 +1,8 @@
 
 var data = {
-    labels: ["Room", "Cubiculum", "Shop", "Staircase", "Corridor", "Atrium", "Fauces", "Garden", "Kitchen", "Tablinum", "Ala", "Hall", "Courtyard", "Oecus", "Peristyle", "Portico"],
+    labels: ["Room", "Cubiculum", "Shop", "Staircase", "Corridor", "Atrium", "Fauces", "Garden", "Kitchen", "Tablinum", "Alae", "Hall", "Courtyard", "Oecus", "Peristyle", "Portico"],
     datasets: [{
-        label: "Number of buildings",
+        label: "Totaal aantal van soorten gebouwen",
         backgroundColor: "#7F2122",
         hoverBackgroundColor: "#FACD1E",
         data: [560, 277, 347, 402, 363, 388, 377, 278, 221, 198, 131, 150, 169, 133, 120, 123],

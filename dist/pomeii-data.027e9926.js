@@ -119,9 +119,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/pomeii-data.js":[function(require,module,exports) {
 var data = {
-  labels: ["Room", "Cubiculum", "Shop", "Staircase", "Corridor", "Atrium", "Fauces", "Garden", "Kitchen", "Tablinum", "Ala", "Hall", "Courtyard", "Oecus", "Peristyle", "Portico"],
+  labels: ["Room", "Cubiculum", "Shop", "Staircase", "Corridor", "Atrium", "Fauces", "Garden", "Kitchen", "Tablinum", "Alae", "Hall", "Courtyard", "Oecus", "Peristyle", "Portico"],
   datasets: [{
-    label: "Number of buildings",
+    label: "Totaal aantal van soorten gebouwen",
     backgroundColor: "#7F2122",
     hoverBackgroundColor: "#FACD1E",
     data: [560, 277, 347, 402, 363, 388, 377, 278, 221, 198, 131, 150, 169, 133, 120, 123]
@@ -175,7 +175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54628" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
