@@ -145,7 +145,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-  this._div.innerHTML = '<h4>Romeinse rijk (provincies ca. AD117) </h4>' + (props ? '<b>' + props.name + '</b>' : 'Beweeg over de kaart');
+  this._div.innerHTML = '<h4>Romeinse Keizerrijk (provincies, ca. 117) </h4>' + (props ? '<b>' + props.name + '</b>' : 'Beweeg over de kaart');
 };
 
 info.addTo(mymap); // style
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50008" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63870" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

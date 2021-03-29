@@ -25,7 +25,7 @@ var info = L.control();
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Romeinse rijk (provincies ca. AD117) </h4>' +  (props ?
+		this._div.innerHTML = '<h4>Romeinse Keizerrijk (provincies, ca. 117) </h4>' +  (props ?
 			'<b>' + props.name + '</b>'
 			: 'Beweeg over de kaart');
 	};

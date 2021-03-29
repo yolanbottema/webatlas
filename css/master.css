@@ -21,41 +21,80 @@ html, body {
 
 .painting-img {
     float: right;
-    width: 67%;
-    height: 67%;
+    width: 100%;
+    height: 100%;
 }
 
 /* intro */
 
-.intro {
+.intro-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
+
+.image {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+.tekst {
+    grid-column: 1/1;
+    grid-row: 1;
+}
+
+.xl-header{
+    margin-bottom: 5%;
+}
+/* .intro {
     height: 77vh;
     margin-top: 5%;
-}
+} */
 
 /* .tekst{
     margin-top: 5%;
 } */
 
 .txt-intro {
-    /* margin: 1% 10% 10% 3%; */
-    margin-left: 2%;
-    margin-right: 70%;
     text-align: justify;
 }
 
 /* ROMEINSE RIJK - pagina 1 */
-
+.romeinse-rijk-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
 /* leaflet - kaart 1 */
+.kaart1{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.kaart1-txt{
+    grid-column: 4/6;
+    grid-row: 1;
+}
 
 #mapid {
     /* height: 500px;
     width: 670px; */
     height: 50vh;
     width: 40vw;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
-
+/* legenda */
 .info {
     padding: 6px 8px;
     font: 14px 'Montserrat', sans-serif;
@@ -71,71 +110,132 @@ html, body {
 }
 
 /* mapbox - kaart 2 */
+.mapbox{
+    grid-column: 1/3;
+    grid-row: 2;
+}
 
-.mapbox {
+.mapbox-txt{
+    grid-column: 4/6;
+    grid-row: 2;
+}
+
+/* .mapbox {
     margin-left: 5%;
     margin-bottom: 5%;
-}
+} */
 
 #map {
     /* position: absolute; 
         top: 135%; 
         bottom: 0;  */
-    width: 42%;
+    width: 130%;
     height: 500px;
 }
 
 /* esri - kaart 3 */
+.kaart3{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.kaart3-txt{
+    grid-column: 4/6;
+    grid-row: 3;
+}
 
 .iframe-container iframe {
     border: 0;
-    width: 40%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    width: 130%;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
 /* ROMEINSE KEIZERS - pagina 2 */
-
+.romeinse-keizers-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
 /* ChartJS-keizers-doodsoorzaak */
+.chart-js-txt{
+    grid-column: 4/6;
+    grid-row: 1;
+}
 
 .chart-js {
     /* height: 600px;
     width: 500px; */
+    grid-column: 1/3;
+    grid-row: 1;
     height: 60vh;
     width: 40vw;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
 /* Datawrapper-leeftijd-overlijden */
-
+.datawrapper-txt{
+    grid-column: 4/6;
+    grid-row: 2;
+}
 #datawrapper-chart-81tpx {
-    width: 0;
+    width: 130%;
     min-width: 40% !important;
     border: none;
 }
 
 .chart-datawrapper {
-    margin-left: 5%;
-    margin-bottom: 5%;
+    grid-column: 1/3;
+    grid-row: 2;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
 /* kepler */
 
 #kepler {
-    width: 0;
+    width: 130%;
     min-width: 40% !important;
     border: none;
 }
 
 .keplermap {
-    margin-left: 5%;
-    margin-bottom: 5%;
+    grid-column: 1/3;
+    grid-row: 3;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
+.kepler-txt{
+    grid-column: 4/6;
+    grid-row: 3;
+}
 /* POMPEII - pagina 3 */
-
+.pompeii-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
 /* leaflet - geoserver  */
+.kaart2{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.kaart2-txt{
+    grid-column: 4/6;
+    grid-row: 1;
+}
 
 #mapid2 {
     /* height: 500px;
@@ -149,37 +249,69 @@ html, body {
 /* chart js - pompeii */
 
 .chart-js-pompeii {
+    grid-column: 1/3;
+    grid-row: 2;
     /* height: 600px;
     width: 500px; */
     height: 60vh;
     width: 40vw;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
+}
+
+.chart-js-pompeii-txt{
+    grid-column: 4/6;
+    grid-row: 2;
 }
 
 /* ROME - pagina 4 */
-
+.rome-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
 /* openlayers */
+/* .map-ol{
+    grid-column: 1/3;
+    grid-row: 1;
+} */
+.map-ol-txt{
+    grid-column: 4/6;
+    grid-row: 1;
+}
 
 #map-ol {
     height: 50vh;
     width: 40vw;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    grid-column: 1/3;
+    grid-row: 1;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
 /* sketchfab */
 
 .sketchfab-embed-wrapper {
+    grid-column: 1/3;
+    grid-row: 2;
     font-size: 13px;
     font-weight: normal;
-    margin: 5%;
+    /* margin: 5%; */
     color: #4A4A4A;
 }
 
+.sketchfab-embed-wrapper-txt{
+    grid-column: 4/6;
+    grid-row: 2;
+}
 .sf {
     height: 44vh;
-    width: 44%;
+    width: 71vh;
 }
 
 #sketchfab a {
@@ -189,19 +321,44 @@ html, body {
 }
 
 /* vici - kaart */
+.vici-map{
+    grid-column: 1/3;
+    grid-row: 3;
+}
 
+.vici-map-txt{
+    grid-column: 4/6;
+    grid-row: 3;
+}
 #vici-map-id {
-    width: 40%;
-    height: 50%;
+    width: 130%;
+    height: 100%;
     position: relative;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    /* margin-left: 5%;
+    margin-bottom: 5%; */
 }
 
 /* ROMEINEN IN NEDERLAND - pagina 5 */
-
+.romeinen-nl-grid {
+    margin: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 20%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 5%;
+    column-gap: 2%;
+}
 /* leaflet kaart limes */
+.kaart4{
+    grid-column: 1/3;
+    grid-row: 1;
+}
 
+.kaart4-txt{
+    grid-column: 4/6;
+    grid-row: 1;
+}
 #mapid-4 {
     /* height: 500px;
     width: 670px; */
@@ -212,9 +369,12 @@ html, body {
 }
 
 /* flourish */
-
+.iframe-flourish-txt{
+    grid-column: 4/6;
+    grid-row: 2 ;
+}
 .flourish {
-    width: 100% !important;
+    width: 200% !important;
     margin-top: 4px !important;
     text-align: left !important;
 }
@@ -231,8 +391,10 @@ html, body {
 }
 
 .iframe-flourish {
-    width: 41%;
-    height: 50%;
+    grid-column: 1/3;
+    grid-row: 2;
+    width: 134%;
+    height: 250%;
     margin-left: 4.5%;
 }
 
