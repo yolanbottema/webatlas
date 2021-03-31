@@ -17,6 +17,9 @@
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
+    <!-- js lazyload -->
+    <script src="/lazysizes.min.62dc815d.js" async=""></script>
+
     <title>Romeinse Keizers </title>
 <script src="/kepler.gl.js"></script></head>
 
@@ -71,7 +74,7 @@
         <!-- datawrapper grafiek -->
 
         <div class="chart-datawrapper">
-            <iframe title="Leeftijd van overlijden" aria-label="chart" id="datawrapper-chart-81tpx" src="https://datawrapper.dwcdn.net/81tpx/1/" scrolling="no" frameborder="0" height="600"></iframe>
+            <iframe class="lazyload" title="Leeftijd van overlijden" aria-label="chart" id="datawrapper-chart-81tpx" src="https://datawrapper.dwcdn.net/81tpx/1/" scrolling="no" frameborder="0" height="600"></iframe>
             <script defer="" src="/leeftijd-overlijden.71e9fd9e.js"></script>
         </div>
 
@@ -91,7 +94,7 @@
 
         <div class="keplermap">
             <div id="#">
-                <iframe id="kepler" src="/kepler.gl.html" scrolling="no" frameborder="0" height="500" name="iframe">
+                <iframe class="lazyload" id="kepler" src="/kepler.gl.html" scrolling="no" frameborder="0" height="500" name="iframe">
                 </iframe>
             </div>
         </div>

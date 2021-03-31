@@ -22,6 +22,9 @@
     <!-- css vici.org -->
     <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 
+    <!-- js lazyload -->
+    <script src="lazysizes.min.js" async=""></script>
+
     <title>Rome</title>
 </head>
 
@@ -73,9 +76,9 @@
 
         <!-- sketchfab -->
         <div class="sketchfab-embed-wrapper">
-            <iframe class="sf" title="The Capitoline wolf" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking
-                execution-while-out-of-viewport execution-while-not-rendered web-share
+            <iframe class="lazyload" id="sf" title="The Capitoline wolf" frameborder="0" allowfullscreen
+                mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr"
+                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
                 src="https://sketchfab.com/models/b195f0e1b7be4ec9b8d2f6d55006133a/embed?autospin=0&preload=1">
             </iframe>
             <p id="sketchfab" class="s-body"><a

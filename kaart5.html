@@ -25,6 +25,9 @@
         crossorigin=""></script>
     <script defer src="json/limes.geojson" type="text/javascript"></script>
     <script defer src="json/limes-weg-nl.geojson" type="text/javascript"></script>
+    
+    <!-- js lazyload -->
+    <script src="lazysizes.min.js" async=""></script>
 
     <title>Romeinen in Nederland</title>
 </head>
@@ -72,7 +75,7 @@
         </div>
 
         <!-- flourish -->
-        <iframe class='iframe-flourish' defer src='https://flo.uri.sh/visualisation/5688752/embed'
+        <iframe class="lazylod" id='iframe-flourish' src='https://flo.uri.sh/visualisation/5688752/embed'
             title='Interactive or visual content' frameborder='0' scrolling='no'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
         <div class='flourish'><a class='flourish-credit'

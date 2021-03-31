@@ -18,7 +18,7 @@ html, body {
 
 /* homepage image */
 
-.painting-img {
+#painting-img {
     float: right;
     width: 100%;
     height: 100%;
@@ -270,7 +270,8 @@ html, body {
     grid-column: 4/6;
     grid-row: 2;
 }
-.sf {
+
+#sf {
     height: 44vh;
     width: 71vh;
 }
@@ -347,7 +348,7 @@ html, body {
     margin-left: 5%;
 }
 
-.iframe-flourish {
+#iframe-flourish {
     grid-column: 1/3;
     grid-row: 2;
     width: 134%;
