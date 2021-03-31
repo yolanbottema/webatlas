@@ -332,6 +332,8 @@ html, body {
     grid-row: 2 ;
 }
 .flourish {
+    grid-column: 1;
+    grid-row: 3;
     width: 100% !important;
     margin-top: 4px !important;
     text-align: left !important;
@@ -345,7 +347,8 @@ html, body {
     width: 105px !important;
     height: 16px !important;
     border: none !important;
-    margin-left: 5%;
+    margin-left: 14%;
+
 }
 
 #iframe-flourish {
